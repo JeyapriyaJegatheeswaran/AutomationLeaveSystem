@@ -40,7 +40,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>06/02/2019 5:47:52 PM</span>
+				<span class='suite-start-time'>07/02/2019 12:01:14 PM</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -125,10 +125,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>1</span> test(s) passed</span>
+					<span><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>3</span> test(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -140,10 +140,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>1</span> step(s) passed</span>
+					<span><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> step(s) failed, <span class='strong'>1</span> others
+					<span class='strong'>6</span> step(s) failed, <span class='strong'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -162,14 +162,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>test login</span>
-						<span class='test-time'>06/02/2019 5:48:06 PM</span>
+						<span class='test-time'>07/02/2019 12:01:26 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>06/02/2019 5:48:06 PM</span>
-	<span class='label end-time'>06/02/2019 5:48:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+802ms</span>
+	<span class='label start-time'>07/02/2019 12:01:26 PM</span>
+	<span class='label end-time'>07/02/2019 12:02:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+782ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -183,12 +183,51 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:48:07 PM</td>
-					<td class='step-details'>The Test Method Name As : addUser is Fail</td>
+					<td class='timestamp'>12:01:26 PM</td>
+					<td class='step-details'>The Test Method Name As : login is Fail</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>5:48:07 PM</td>
+					<td class='timestamp'>12:01:26 PM</td>
+					<td class='step-details'>The Test Failure : java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>test login</span>
+						<span class='test-time'>07/02/2019 12:01:43 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>07/02/2019 12:01:43 PM</span>
+	<span class='label end-time'>07/02/2019 12:02:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+24ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:01:44 PM</td>
+					<td class='step-details'>The Test Method Name As : login is Fail</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:01:44 PM</td>
 					<td class='step-details'>The Test Failure : org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p"}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
@@ -197,8 +236,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54235}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 2bfa66676985095e632cfe7169b2b586
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62826}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 2d2b03382521734c1f94fc046eec1681
 *** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}</td>
 				</tr>
 			</tbody>
@@ -208,17 +247,17 @@ Session ID: 2bfa66676985095e632cfe7169b2b586
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>test login</span>
-						<span class='test-time'>06/02/2019 5:48:19 PM</span>
+						<span class='test-time'>07/02/2019 12:01:56 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>06/02/2019 5:48:19 PM</span>
-	<span class='label end-time'>06/02/2019 5:48:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+64ms</span>
+	<span class='label start-time'>07/02/2019 12:01:56 PM</span>
+	<span class='label end-time'>07/02/2019 12:02:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+411ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -232,13 +271,101 @@ Session ID: 2bfa66676985095e632cfe7169b2b586
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:48:23 PM</td>
+					<td class='timestamp'>12:01:56 PM</td>
 					<td class='step-details'>Assert Pass as condition is True</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:48:26 PM</td>
-					<td class='step-details'>The Test Method Name As : addUser is Passed</td>
+					<td class='timestamp'>12:01:59 PM</td>
+					<td class='step-details'>The Test Method Name As : login is Passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>test login</span>
+						<span class='test-time'>07/02/2019 12:02:10 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>07/02/2019 12:02:10 PM</span>
+	<span class='label end-time'>07/02/2019 12:02:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+305ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:02:10 PM</td>
+					<td class='step-details'>The Test Method Name As : login is Fail</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:02:10 PM</td>
+					<td class='step-details'>The Test Failure : org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62935}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e41edb1f35f30d18c915c4a269124473
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>test login</span>
+						<span class='test-time'>07/02/2019 12:02:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>07/02/2019 12:02:22 PM</span>
+	<span class='label end-time'>07/02/2019 12:02:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+43ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:02:23 PM</td>
+					<td class='step-details'>Assert Pass as condition is True</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:02:26 PM</td>
+					<td class='step-details'>The Test Method Name As : login is Passed</td>
 				</tr>
 			</tbody>
 		</table>
@@ -277,31 +404,31 @@ Session ID: 2bfa66676985095e632cfe7169b2b586
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>06/02/2019 5:47:52 PM</div>
+					<div class='panel-lead'>07/02/2019 12:01:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>06/02/2019 5:48:27 PM</div>
+			 		<div class='panel-lead'>07/02/2019 12:02:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>34,396ms</div>
+					<div class='panel-lead'>73,366ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -345,22 +472,22 @@ Session ID: 2bfa66676985095e632cfe7169b2b586
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 1,
+				passParent: 2,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 2,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				unknownChild: 0,
-				infoChild: 1,
+				infoChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

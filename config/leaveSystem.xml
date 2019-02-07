@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LeaveSystem">
+<test name="Login" >
+<classes>
+<class name="com.sgic.automation.test.Login">
+</class>
+</classes>
+</test>
+<test name="AddUser">
+<classes>
+<class name="com.sgic.automation.test.AddUser">
+</class>
+</classes>
+</test>
+
+</suite>

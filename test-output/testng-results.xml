@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34597" started-at="2019-02-06T12:17:52Z" finished-at="2019-02-06T12:18:27Z">
+  <suite name="Default suite" duration-ms="73552" started-at="2019-02-07T06:31:14Z" finished-at="2019-02-07T06:32:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34597" started-at="2019-02-06T12:17:52Z" finished-at="2019-02-06T12:18:27Z">
-      <class name="com.sgic.automation.AddUser">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="setUp" is-config="true" duration-ms="276" started-at="2019-02-06T12:17:52Z" finished-at="2019-02-06T12:17:53Z">
+    <test name="Default test" duration-ms="73552" started-at="2019-02-07T06:31:14Z" finished-at="2019-02-07T06:32:27Z">
+      <class name="com.sgic.automation.test.Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="setUp" is-config="true" duration-ms="541" started-at="2019-02-07T06:31:14Z" finished-at="2019-02-07T06:31:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="lunchBrowser" is-config="true" duration-ms="12263" started-at="2019-02-06T12:17:54Z" finished-at="2019-02-06T12:18:06Z">
+        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="lunchBrowser" is-config="true" duration-ms="11513" started-at="2019-02-07T06:31:15Z" finished-at="2019-02-07T06:31:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.sgic.automation.AddUser.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.sgic.automation.test.Login.login(java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchBrowser -->
-        <test-method status="FAIL" signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.AddUser@75483843]" name="addUser" duration-ms="947" started-at="2019-02-06T12:18:06Z" data-provider="HRMSAddUser" finished-at="2019-02-06T12:18:07Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e]" name="login" duration-ms="150" started-at="2019-02-07T06:31:26Z" data-provider="HRMSLogin" finished-at="2019-02-07T06:31:26Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -30,23 +30,79 @@
             <param index="1">
               <value is-null="true"/>
             </param>
-            <param index="2">
-              <value is-null="true"/>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at com.sgic.automation.test.Login.login(Login.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="1151" started-at="2019-02-07T06:31:26Z" finished-at="2019-02-07T06:31:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=Login.login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e] output={null}]]]>
+              </value>
             </param>
-            <param index="3">
-              <value is-null="true"/>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="lunchBrowser" is-config="true" duration-ms="15452" started-at="2019-02-07T06:31:27Z" finished-at="2019-02-07T06:31:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sgic.automation.test.Login.login(java.lang.String,java.lang.String)]]>
+              </value>
             </param>
-            <param index="4">
-              <value is-null="true"/>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchBrowser -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e]" name="login" duration-ms="1072" started-at="2019-02-07T06:31:43Z" data-provider="HRMSLogin" finished-at="2019-02-07T06:31:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
             </param>
-            <param index="5">
-              <value is-null="true"/>
-            </param>
-            <param index="6">
-              <value is-null="true"/>
-            </param>
-            <param index="7">
-              <value is-null="true"/>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -59,8 +115,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54235}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 2bfa66676985095e632cfe7169b2b586
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62826}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 2d2b03382521734c1f94fc046eec1681
 *** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}]]>
             </message>
             <full-stacktrace>
@@ -72,8 +128,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54235}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 2bfa66676985095e632cfe7169b2b586
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62826}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 2d2b03382521734c1f94fc046eec1681
 *** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -91,7 +147,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.sgic.automation.AddUser.addUser(AddUser.java:75)
+at com.sgic.automation.test.Login.login(Login.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,91 +178,208 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="closeBrowser" is-config="true" duration-ms="1345" started-at="2019-02-06T12:18:07Z" finished-at="2019-02-06T12:18:08Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="876" started-at="2019-02-07T06:31:44Z" finished-at="2019-02-07T06:31:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addUser status=FAILURE method=AddUser.addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.AddUser@75483843] output={null}]]]>
+                <![CDATA[[TestResult name=login status=FAILURE method=Login.login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="lunchBrowser" is-config="true" duration-ms="10417" started-at="2019-02-06T12:18:08Z" finished-at="2019-02-06T12:18:19Z">
+        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="lunchBrowser" is-config="true" duration-ms="10652" started-at="2019-02-07T06:31:45Z" finished-at="2019-02-07T06:31:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.sgic.automation.AddUser.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.sgic.automation.test.Login.login(java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchBrowser -->
-        <test-method status="PASS" signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.AddUser@75483843]" name="addUser" duration-ms="7202" started-at="2019-02-06T12:18:19Z" data-provider="HRMSAddUser" finished-at="2019-02-06T12:18:26Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e]" name="login" duration-ms="3763" started-at="2019-02-07T06:31:56Z" data-provider="HRMSLogin" finished-at="2019-02-07T06:31:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[jpriya]]>
+                <![CDATA[priya]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[priya@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[jpriya]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[jpriya]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[jpriya]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Employee]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Food]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[21213]]>
+                <![CDATA[priya1994]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="closeBrowser" is-config="true" duration-ms="854" started-at="2019-02-06T12:18:26Z" finished-at="2019-02-06T12:18:27Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="868" started-at="2019-02-07T06:31:59Z" finished-at="2019-02-07T06:32:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addUser status=SUCCESS method=AddUser.addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.AddUser@75483843] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.sgic.automation.AddUser@75483843]" name="endReport" is-config="true" duration-ms="148" started-at="2019-02-06T12:18:27Z" finished-at="2019-02-06T12:18:27Z">
+        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="lunchBrowser" is-config="true" duration-ms="9472" started-at="2019-02-07T06:32:00Z" finished-at="2019-02-07T06:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sgic.automation.test.Login.login(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchBrowser -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e]" name="login" duration-ms="536" started-at="2019-02-07T06:32:10Z" data-provider="HRMSLogin" finished-at="2019-02-07T06:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62935}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e41edb1f35f30d18c915c4a269124473
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CEG07TT', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\Saruga\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62935}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e41edb1f35f30d18c915c4a269124473
+*** Element info: {Using=xpath, value=/html/body/app-root/div/app-side-nav/div/div[2]/ul/li[1]/a/p}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sgic.automation.test.Login.login(Login.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="808" started-at="2019-02-07T06:32:10Z" finished-at="2019-02-07T06:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=Login.login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="lunchBrowser(java.lang.reflect.Method)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="lunchBrowser" is-config="true" duration-ms="10912" started-at="2019-02-07T06:32:11Z" finished-at="2019-02-07T06:32:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sgic.automation.test.Login.login(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchBrowser -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e]" name="login" duration-ms="4283" started-at="2019-02-07T06:32:22Z" data-provider="HRMSLogin" finished-at="2019-02-07T06:32:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="755" started-at="2019-02-07T06:32:26Z" finished-at="2019-02-07T06:32:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login(java.lang.String, java.lang.String)[pri:1, instance:com.sgic.automation.test.Login@6eebc39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.sgic.automation.test.Login@6eebc39e]" name="endReport" is-config="true" duration-ms="111" started-at="2019-02-07T06:32:27Z" finished-at="2019-02-07T06:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.sgic.automation.AddUser -->
+      </class> <!-- com.sgic.automation.test.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

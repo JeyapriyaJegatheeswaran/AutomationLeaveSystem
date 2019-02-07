@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LeaveSystem]">
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="com.sgic.automation.test.Login">
+        <methods>
+          <include name="login" invocation-numbers="0 1 2 3 4"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="lunchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.sgic.automation.test.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" name="AddUser(failed)">
+    <classes>
+      <class name="com.sgic.automation.test.AddUser">
+        <methods>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="lunchBrowser"/>
+          <include name="addUser" invocation-numbers="0 1"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.sgic.automation.test.AddUser -->
+    </classes>
+  </test> <!-- AddUser(failed) -->
+</suite> <!-- Failed suite [LeaveSystem] -->
